@@ -11,7 +11,7 @@ requires = ["hatchling"]
 ################################################################################
 
 [project]
-name = "mypackage"
+name = "mypackage_POP"
 
 version = "0.1.0"
 
@@ -42,8 +42,8 @@ keywords = []
 dependencies = []
 
 [project.urls]
-Documentation = "https://mypackage.readthedocs.io"
-Download = "https://pypi.org/project/mypackage/#files"
+Documentation = "https://mypackage_POP.readthedocs.io"
+Download = "https://pypi.org/project/mypackage_POP/#files"
 
 [project.optional-dependencies]
 dev = [
@@ -59,7 +59,7 @@ dev = [
 only-packages = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/mypackage"]
+packages = ["src/mypackage_POP"]
 
 # Create Hatch environment
 [tool.hatch.envs.test]
@@ -74,7 +74,7 @@ extra-dependencies = [
 
 
 [tool.hatch.envs.test.scripts]
-run_test = "pytest {args:--cov=mypackage --cov-report=term-missing}"
+run_test = "pytest {args:--cov=mypackage_POP --cov-report=term-missing}"
 
 [tool.hatch.envs.format]
 description = """Environment that runs the code formatters."""
